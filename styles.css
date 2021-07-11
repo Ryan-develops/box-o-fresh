@@ -1,0 +1,260 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+    margin: 0 auto;
+    font-family: 'Rubik', sans-serif;
+    overflow-x: hidden;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+/* ////////////// NAV BAR & HEADER ////////////// */
+
+
+/* ////////////// NAV BAR & HEADER ////////////// */
+
+header {
+    display: flex;
+    flex-direction: column;
+}
+
+#nav-bar {
+    position: fixed;
+    margin-bottom: 25px;
+    width: 100%;
+    z-index: 10000;
+}
+
+nav ul {
+    margin-top: 0;
+    padding: 12px;
+    background-color: #FF8167;
+}
+
+nav li {
+    display: inline;
+    padding: 17px;
+    font-size: 0.8em;
+}
+
+nav a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+#header-img {
+    padding-top: 60px;
+    padding-bottom: 30px;
+    width: 100vw;
+}
+
+
+/* ////////////// GALLERY ////////////// */
+
+
+/* ////////////// GALLERY  ////////////// */
+
+#gallery {
+    display: flex;
+    flex-direction: column;
+    background-color: #FF8167;
+    width: 100vw;
+    min-height: 1700px;
+}
+
+#gallery h1 {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.gallery-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+}
+
+.about-us {
+    background-color: white;
+    max-width: 100%;
+}
+
+.gallery-flex h3 {
+    text-align: center;
+}
+
+.gallery-flex p {
+    text-align: center;
+}
+
+.gallery-flex-steps img {
+    position: relative;
+    width: 100vw;
+    padding: 10px;
+    transition: 0.3s linear;
+}
+
+.h1-steps {
+    transition: 0.3s linear;
+}
+
+
+/* ////////////// VIDEO ////////////// */
+
+
+/* ////////////// VIDEO  ////////////// */
+
+iframe {
+    width: 100%;
+}
+
+#video-section {
+    margin-top: -21px;
+    background-color: rgb(255, 255, 255);
+    width: 100vw;
+    min-height: 600px;
+}
+
+#video-section h1 {
+    padding-top: 20px;
+    text-align: center;
+}
+
+#video-section p {
+    padding-top: 20px;
+    text-align: center;
+}
+
+
+/* ////////////// FORM ////////////// */
+
+
+/* ////////////// FORM ////////////// */
+
+.form-div {
+    background-color: #FF8167;
+    width: 100vw;
+    min-height: 350px;
+    color: rgb(0, 0, 0);
+}
+
+.form-div h1 {
+    padding-top: 25px;
+    text-align: center;
+}
+
+.form-div h4 {
+    text-align: center;
+}
+
+#email {
+    display: block;
+    margin: auto;
+    width: 154px;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 2px solid rgb(185, 155, 155);
+    background-color: rgb(231, 231, 231);
+    color: rgb(0, 0, 0);
+    font-family: 'Rubik', sans-serif;
+}
+
+#submit {
+    display: block;
+    margin: auto;
+    padding: 15px;
+    background-color: rgb(90, 197, 90);
+    border: 2px solid rgb(56, 56, 56);
+    font-family: 'Rubik', sans-serif;
+    font-size: 20px;
+}
+
+.credits {
+    background-color: #FF8167;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    color: wheat;
+}
+
+
+/* ////////////// MEDIA QUERIES ////////////// */
+
+
+/* ////////////// MEDIA QUERIES ////////////// */
+
+@media all and (min-width: 992px) {
+    body {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+    #nav-bar ul {
+        display: flex;
+        justify-content: center;
+        padding: 25px;
+        font-size: 35px;
+    }
+    #nav-bar a {
+        color: rgb(251, 251, 251);
+    }
+    #header-img {
+        width: 100%;
+        margin: 0 auto;
+        padding-top: 180px;
+        max-width: 500px;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+    }
+    #gallery {
+        background: linear-gradient(to bottom, #DD644F 32%, #fff 32% 54%, #DD644F 54% 76.5%, #fff 76.5%);
+    }
+    .about-us {
+        max-width: 100%;
+        width: 100%;
+        overflow: hidden;
+    }
+    .gallery-flex-steps img {
+        margin: 0 auto;
+        max-width: 100%;
+        width: 600px;
+    }
+    .gallery-flex-steps img:hover {
+        transform: scale(1.2);
+    }
+    .h1-steps {
+        margin: 50px auto;
+        max-width: 100%;
+        width: 200px;
+        height: 40px;
+        background-color: rgb(255, 255, 255);
+        color: rgb(27, 27, 27);
+        border: 2px dotted rgb(81, 134, 76);
+    }
+    .h1-steps:hover {
+        transform: scale(1.4);
+    }
+    #video-section {
+        margin: 0 auto;
+        padding-top: 100px;
+        padding-bottom: 140px;
+        max-width: 100%;
+        width: 700px;
+    }
+    .credits {
+        text-align: center;
+        padding-top: 40px;
+        padding-bottom: 20px;
+        color: wheat;
+    }
+}
